@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chord Chart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Chord Chart</h1>
+    <nav><a href="index.html">◀ Back to Circle</a></nav>
+  </header>
+
+  <main class="card" style="max-width:900px;">
+    <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+      <input id="chordInput" placeholder="Type a chord (e.g., C, Am, G7)" style="flex:1; padding:10px; border-radius:10px; border:1px solid #374151; background:#0b1020; color:#e5e7eb;">
+      <button id="addBtn">Add</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+    <p class="hint" style="margin-top:8px">Tap a tile to play that chord. Build your sequence left-to-right.</p>
+    <div id="row" style="display:flex; gap:10px; flex-wrap:wrap;"></div>
+  </main>
+
+  <script src="chords.js"></script>
+</body>
+</html>
